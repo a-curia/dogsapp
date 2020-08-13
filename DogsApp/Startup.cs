@@ -29,6 +29,10 @@ namespace DogsApp
             services
                 .AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            var appSettingsSection = Configuration.GetSection("ApplicationSettings");
+            services.Configure<ApplicationSettings>(appSettingsSection);
+
             services.AddControllers();
         }
 
