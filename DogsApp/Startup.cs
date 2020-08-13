@@ -26,12 +26,12 @@ namespace DogsApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<DogsDbContext>(options =>
                 options.UseMySql(this.Configuration.GetConnectionString("DefaultConnection")));
 
             services
                 .AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<DogsDbContext>();
 
             var applicationSettingsConfiguration = this.Configuration.GetSection("ApplicationSettings");
             services.Configure<ApplicationSettings>(applicationSettingsConfiguration);
@@ -63,10 +63,11 @@ namespace DogsApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //if (env.IsDevelopment())
-            //{
-            //    app.UseDatabaseErrorPage();
-            //}
+            if (env.IsDevelopment())
+            {
+                //app.UseDatabaseErrorPage();
+                app.UseDeveloperExceptionPage();
+            }
 
             app.UseRouting();
 

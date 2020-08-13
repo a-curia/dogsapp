@@ -3,7 +3,6 @@ C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
-C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.csprojAssemblyReference.cache
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.AssemblyInfoInputs.cache
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.AssemblyInfo.cs
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.RazorTargetAssemblyInfo.cache
@@ -50,3 +49,10 @@ C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.pdb
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.genruntimeconfig.cache
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.csproj.CoreCompileInputs.cache
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.MvcApplicationPartsAssemblyInfo.cache
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

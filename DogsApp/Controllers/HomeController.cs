@@ -5,7 +5,7 @@ namespace DogsApp.Controllers
 {
     public class HomeController : ApiController
     {
-        //[Authorize]
+        [Authorize]
         public ActionResult Get()
         {
             return Ok("Works");
