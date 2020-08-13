@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DogsApp.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<User>
+    public class DogsDbContext : IdentityDbContext<User>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public DogsDbContext(DbContextOptions<DogsDbContext> options)
             : base(options)
         {
         }

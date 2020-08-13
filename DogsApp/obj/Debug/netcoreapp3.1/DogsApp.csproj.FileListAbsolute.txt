@@ -48,3 +48,5 @@ C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Pomelo.JsonObjec
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.dll
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.pdb
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.genruntimeconfig.cache
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.csproj.CoreCompileInputs.cache
+C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.MvcApplicationPartsAssemblyInfo.cache
