@@ -7,6 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using DogsApp.Models;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace DogsApp
 {
@@ -23,15 +26,35 @@ namespace DogsApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySql(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                options.UseMySql(this.Configuration.GetConnectionString("DefaultConnection")));
 
             services
                 .AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            var appSettingsSection = Configuration.GetSection("ApplicationSettings");
-            services.Configure<ApplicationSettings>(appSettingsSection);
+            var applicationSettingsConfiguration = this.Configuration.GetSection("ApplicationSettings");
+            services.Configure<ApplicationSettings>(applicationSettingsConfiguration);
+
+            var appSettings = applicationSettingsConfiguration.Get<ApplicationSettings>();
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
 
             services.AddControllers();
         }
@@ -45,6 +68,13 @@ namespace DogsApp
             }
 
             app.UseRouting();
+
+            app.UseCors(options => 
+                options
+                    .AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+            );
 
             app.UseAuthentication();
             app.UseAuthorization();

@@ -36,8 +36,6 @@ C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\Microsoft.Extens
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.csproj.CopyComplete
-C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.csproj.CoreCompileInputs.cache
-C:\APPS\workspaceDotNet\DogsApp\DogsApp\obj\Debug\netcoreapp3.1\DogsApp.MvcApplicationPartsAssemblyInfo.cache
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\DogsApp.deps.json
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\DogsApp.runtimeconfig.json
 C:\APPS\workspaceDotNet\DogsApp\DogsApp\bin\Debug\netcoreapp3.1\DogsApp.runtimeconfig.dev.json
