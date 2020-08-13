@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-DogsApp-C5B1B1FA-8551-418A-ABB3-10C590A23418")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DogsApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
