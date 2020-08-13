@@ -3,9 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DogsApp.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class HomeController : ControllerBase
+    public class HomeController : ApiController
     {
         //[Authorize]
         public IActionResult Get()
